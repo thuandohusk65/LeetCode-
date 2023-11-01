@@ -11,7 +11,7 @@ class Solution {
         var oldSpot = 0.0
         while (Math.abs(result - oldSpot) > 1) {
             temp = result
-            var multiple = result.toDouble() * result.toDouble()
+            var multiple = result * result
             if (multiple < x) {
                 result += Math.abs(result - oldSpot) * 0.5
 
@@ -36,5 +36,5 @@ class Solution {
 
 fun main() {
     var solution = Solution()
-    print(solution.mySqrt(2147483647))
+    print(solution.mySqrt(10))
 }
